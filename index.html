@@ -3,19 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercício JS</title>
-    <script defer type="module" src="validacao.js"></script>
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- SCRIPT LINKS -->
+    <script
+      defer
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/messages_pt_BR.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Formulário de Cadastro</title>
   </head>
   <body>
-    <main>
-      <form id="meuFormulario" action="">
-        <label for="campoA">Campo A:</label>
-        <input type="number" name="campoA" id="campoA" />
-        <label for="campoB">Campo B:</label>
-        <input type="number" name="campoB" id="campoB" />
-        <button type="submit">Enviar</button>
-      </form>
-      <div id="mensagem"></div>
-    </main>
+    <section>
+      <div class="container">
+        <div class="form-campo">
+          <h2>Cadastro</h2>
+          <form action="">
+            <div class="input-box">
+              <label for="nomeCompleto">Nome Completo:</label>
+              <input type="text" name="nomeCompleto" id="nomeCompleto" />
+            </div>
+            <div class="input-box">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="input-box">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" name="telefone" id="telefone" />
+            </div>
+            <div class="input-box">
+              <label for="cpf">CPF:</label>
+              <input type="text" name="cpf" id="cpf" />
+            </div>
+            <div class="input-box">
+              <label for="enderecoCompleto">Endereço:</label>
+              <input type="text" name="endereco" id="endereco" />
+            </div>
+            <div class="input-box">
+              <label for="cep">CEP:</label>
+              <input type="text" name="cep" id="cep" />
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
